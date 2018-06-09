@@ -13,7 +13,7 @@ let myArticle = <article></article>;
 
 // Attributes in JSX
 
-const p1 = <p id="large">foo</p>; // able to give ids in JSX
+const p1 = <p id="large">foo</p>; // able to give ids in JSX change 2
 const p2 = <p id="small">bar</p>;
 
 // Nested JSX change 1
