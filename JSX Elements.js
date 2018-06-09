@@ -16,7 +16,7 @@ let myArticle = <article></article>;
 const p1 = <p id="large">foo</p>; // able to give ids in JSX
 const p2 = <p id="small">bar</p>;
 
-// Nested JSX
+// Nested JSX change 1
 
 const myDiv = (
   <div>
