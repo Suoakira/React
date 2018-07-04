@@ -46,3 +46,93 @@ class QuoteMaker extends React.Component {
       );
   }
 }; // rendering multi line JSX expressions
+
+// rendering an owl
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+
+const owl = {
+  title: 'Excellent Owl',
+  src: 'https://s3.amazonaws.com/codecademy-content/courses/React/react_photo-owl.jpg'
+};
+
+class Owl extends React.Component {
+  render() {
+    return (
+    	<div>
+        <h1>{owl.title}</h1>
+        <img
+          src={owl.src}
+          alt={owl.title} />
+      </div>
+    );
+  }
+}
+
+ReactDOM.render(
+  <Owl />, 
+  document.getElementById('app')
+);
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+const fiftyFifty = Math.random() < 0.5;
+
+// New component class starts here:
+class TonightsPlan extends React.Component {
+  render() {
+    if (fiftyFifty) {
+      return <h1>Tonight I'm going out WOOO</h1>;
+    } else {
+      return <h1>Tonight I'm going to bed WOOO</h1>;
+    }
+  }
+}
+
+ReactDOM.render(
+	<TonightsPlan />,
+	document.getElementById('app')
+);
+
+// how this works!
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+class MyName extends React.Component {
+	// name property goes here:
+get name() {
+  return "Kira";
+}
+
+  render() {
+    return <h1>My name is {this.name}.</h1>;
+  }
+}
+
+ReactDOM.render(<MyName />, document.getElementById('app'));
+
+Rndering a button using React
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+class Button extends React.Component {
+  scream() {
+    alert('AAAAAAAAHHH!!!!!');
+  }
+
+  render() {
+    return <button onClick={this.scream}>AAAAAH!</button>;
+  }
+}
+
+ReactDOM.render(
+  <Button />,
+  document.getElementById('app')
+);
+
+// will this upload
